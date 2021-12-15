@@ -30,6 +30,7 @@ if (version_compare(phpversion(), '7.0', '<=')) {
 
 class RateLimiter
 {
+    
     private $api = null;
     private $weights = null;
     private $ordersfunctions = null;
@@ -258,7 +259,7 @@ class RateLimiter
                 }
             }
         }
-        
+
         return call_user_func_array(array(&$this->api, $name), $arguments);
     }
 }
