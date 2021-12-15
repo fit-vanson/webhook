@@ -45,7 +45,19 @@ class WebhookController extends Controller
             ->with('status','You will be notified by webhook');
     }
     public function webhook(Request $request){
-        dd($request->all());
+        $source_ip_list = array(
+            '52.89.214.238',
+            '34.212.75.30',
+            '54.218.53.128',
+            '52.32.178.7',
+            '127.0.0.1'
+        );
+
+        $source_ip = $_SERVER['REMOTE_ADDR'];
+        $json = file_get_contents('php://input');
+        $data = json_decode($json, true);
+        dd($json, $data);
+
     }
 
 }
