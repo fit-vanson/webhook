@@ -27,7 +27,8 @@ Route::get('/home', [WebhookController::class, 'index'])->name('home');
 Route::post('/set-end-point', [WebhookController::class, 'setEndPoint'])->name('setEndPoint');
 Route::post('/test-webhook', [WebhookController::class, 'testWebhook'])->name('testWebhook');
 //Route::post('/webhook/test-success', [WebhookController::class, 'testSuccess'])->name('testSuccess');
-Route::get('/webhook', [WebhookController::class, 'webhook'])->name('webhook');
+Route::get('/view', [WebhookController::class, 'view'])->name('view');
+Route::get('/alert', [WebhookController::class, 'alert'])->name('alert');
 
 //Route::post('/set-end-point', 'HomeController@setEndPoint')->name('setEndPoint');
 
