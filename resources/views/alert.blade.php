@@ -22,10 +22,7 @@
 <br>
 <div class="container">
 
-    <h1>Alert Generator</h1>
-    <p>This widget allows generate Trade Alerts for coins listed on Binance Exchange</p>
-
-
+    <h1>Alert</h1>
     <br>
     <form>
         <div class="row">
